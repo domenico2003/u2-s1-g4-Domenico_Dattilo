@@ -1,0 +1,67 @@
+h2{
+    font-weight: bold;
+    font-size: 60px;
+    margin-block: 20px;
+}
+
+p{
+    font-size: 40px;
+    align-self: self-start;
+    margin-left: 65px;
+}
+
+body{
+    font-family: 'Indie Flower';
+}
+
+#container{
+    background-color: #666666;/* cambiare */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+   
+}
+
+.card{
+    width: 350px;
+    height: 270px;
+    box-shadow: 1px 1px 15px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card:hover{
+    transform-origin: center;
+    transition-timing-function: linear;
+    transform: rotate3D(0,0,1,0deg);
+    transform:scale(1.3);
+    transition-property: all;
+    transition-duration: 500ms;
+    z-index: 1;
+    box-shadow: 10px 10px 15px black;
+}
+
+.postit-1{
+    background:linear-gradient(360deg,rgb(160, 160, 130),#f8f9c7,#f8f9c7,#f8f9c7,#f8f9c7) ;
+    transform: rotate3D(0,0,1,-6.5deg);
+    transform-origin: bottom left;
+}
+
+.postit-2{
+    background:linear-gradient(360deg,#87a187,#bfe8c0,#bfe8c0,#bfe8c0,#bfe8c0) ;
+    transform: rotate3D(0,0,1,5deg);
+    transform-origin: bottom right;
+
+}
+
+.postit-3{
+    background:linear-gradient(360deg,#8f8fa5,#b7b6d7,#b7b6d7,#b7b6d7,#b7b6d7) ;
+    transform: rotate3D(0,0,1,-5deg);
+    transform-origin: bottom left;
+}
